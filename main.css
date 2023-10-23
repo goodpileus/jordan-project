@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #ffffff;
+}
+
+::selection,
+::-moz-selection {
+  background: #ffffff;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+    margin:1.5rem;
+    background:black;
+    color:white;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom:.5rem;
+}
+
+ul {
+  margin-top:.5rem;
+  padding:0 1.3rem;
+  list-style-type: "- ";
+}
+
+em {
+  font-size: 1.5em;
+}
+
+a {
+  color:#a7aeed;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color:#dea7ed;
+}
+
+h1 {
+  font-size: 1.42rem;
+  font-weight: normal;
+}
+
+.construction {
+  display: inline;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding:.3rem 0;
+  animation: flash 3s infinite;
+  font-weight: bold;
+}
+
+@keyframes flash {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  89%{
+    opacity:0;
+  }
+  90%{
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom:1.5rem;
+  left:1.5rem;
+}
+
+.forward-logo {
+  max-width: 100px;
+}
