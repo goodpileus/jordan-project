@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #ffffff;
+}
+
+::selection,
+::-moz-selection {
+  background:rgba(255, 255, 201, 0.6);
+}
+
+@font-face {
+  font-family: 'courier-bt';
+  src: url('courier-bt.woff2') format('woff2'),
+       url('courier-bt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    /* margin:1.5rem; */
+    /* margin-top:0; */
+    margin:0;
+    /* font-family: 'Libertinus mono', monospace; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: "baskerville-urw", serif; */
+    font-family: "adobe-caslon-pro", serif;
+    /* line-height: 2rem; */
+    text-align:justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    color:rgb(51, 43, 53);
+    /* text-shadow: #ffffff 0 0 10px; */
+    /* text-shadow: rgb(51, 43, 53) 0 0 1px; */
+    text-shadow:
+     -2px -2px 3px #ffffff,  
+      2px -2px 3px #ffffff,
+      -2px 2px 3px #ffffff,
+       2px 2px 3px #ffffff;
+    /* text-shadow:
+     -3px -3px 3px #eeeded,  
+      3px -3px 3px #eeeded,
+      -3px 3px 3px #eeeded,
+       3px 3px 3px #eeeded; */
+}
+
+.bg {
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity:0;
+  transition: opacity .5s;
+  /* filter: grayscale(100%); */
+  /* filter: blur(2px); */
+  background-color: #eeeded;
+  /* background-color: #373737; */
+  /* background-color: #dfffff; */
+  background-position: center;
+}
+
+.title-bg {
+  background-image:url(img/loop5.gif);
+  background-size: 200px;
+  animation: drift 800s linear infinite;
+
+}
+
+.drift-bg {
+  background-image:url(img/loop4.gif);
+  background-size: 200px;
+  /* animation: drift 200s linear infinite; */
+
+}
+
+.hd-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
+}
+
+.eyes-bg {
+  background-image:url(img/eyes2-feat.gif);
+  background-size: 1800px;
+}
+
+.loss-bg {
+  background-image:url(img/loss.gif);
+  background-size: 600px;
+}
+
+.failure-bg {
+  background-image:url(img/failure.gif);
+  background-size: 600px;
+}
+
+.goosepimples-bg {
+  background-image:url(img/goosepimples2.gif);
+  background-size: 300px;
+}
+
+.labyrinth-bg {
+  background-image:url(img/labyrinth3-feat.gif);
+  background-size: 1800px;
+}
+
+.voice-bg {
+  background-image:url(img/voice.gif);
+  background-size: 600px;
+}
+
+.sunshine-bg {
+  background-image:url(img/sunshine.gif);
+  background-size: 600px;
+}
+
+.night-bg {
+  background-image:url(img/night2.gif);
+  background-size: 600px;
+}
+
+.door-bg {
+  background-image:url(img/door.gif);
+  background-size: 1700px;
+}
+
+.corridor-bg {
+  background-image:url(img/corridor2.gif);
+  background-size: 1500px;
+}
+
+.vulva-bg {
+  background-image:url(img/corridor4.gif);
+  background-size: 1500px;
+}
+
+.awake-bg {
+  background-image:url(img/corridor2.gif);
+  background-size: 1500px;
+}
+
+.fade-bg {
+  background-image:url(img/fading.gif);
+  background-size: 1500px;
+}
+
+.blank-bg {
+  background-color: white;
+  background-size: 1300px;
+}
+
+.end-bg {
+  background-image:url(img/end.gif);
+  background-size: 200px;
+  animation: drift 800s linear infinite;
+}
+
+.active {
+  opacity:1;
+}
+
+.inactive {
+  opacity:0;
+  animation: destroy 1s linear;
+}
+@keyframes drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 250vw 500vh;
+  }
+}
+
+main {
+  max-width:750px;
+  margin:0 auto;
+  /* background:white; */
+  /* padding:3rem; */
+  /* padding:1.5rem; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "filosofia-grand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size:170px;
+  font-size:10.6rem;
+  line-height: 80%;
+  margin-bottom:1rem;
+  margin-top:0;
+  text-align: center;
+}
+
+h2 {
+  font-size:1.3rem;
+  line-height: 140%;
+  text-align: left;
+  font-family:'courier-bt', Courier, monospace;
+  text-align: center;
+  margin:1rem 0;
+}
+
+.author {
+  position: relative;  
+  margin-bottom: 2rem;
+  top: -16px;
+}
+
+.copy {
+  text-align: center;  
+  max-width: 460px;
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom:0;
+}
+
+img {
+  max-width: 100%;
+}
+
+mark {
+  background:rgba(255, 255, 255, 0);
+}
+
+a {
+  color:black;
+}
+
+.text {
+  padding:1.5rem;
+}
+
+.title {
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding:20px; */
+  padding:1.5rem;
+}
+
+.footer {
+  justify-content: center;
+  position: relative;
+}
+
+.jordan {
+  max-width: 500px;
+  position: relative;  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jordan .copy {
+  text-align: left;
+  margin: 1rem 0;
+  position: relative;
+  /* top: 23px;
+  left: 3px; */
+}
+
+.text-break {
+  height:70vh
+}
+
+.forward {
+  position: absolute;
+  bottom:1.5rem;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forward .copy {
+  margin: 1rem 0;
+  margin: 0;
+}
+
+@media screen and (max-width:600px) {
+  main {
+    /* margin:0 auto; */
+    /* padding:1rem; */
+  }
+
+  .text, .title {
+    padding:1rem;
+  }
+
+  h1 {
+    font-size: 30vw;
+  }
+
+  h2 {
+    font-size:1.15rem;    
+    line-height: 130%;
+  }
+
+  .author {
+    top:0;
+    margin-top:2rem;
+  }
+
+  .copy {
+    font-size:.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+
+
+  .title-bg {
+    background-size: 180px;
+  
+  }
+  
+  .drift-bg {
+    background-size: 180px;
+  
+  }
+  
+  .hd-bg {
+    background-size: 550px;
+  }
+  
+  .eyes-bg {
+    background-size: 250vw;
+  }
+  
+  .loss-bg {
+    background-size: 400px;
+  }
+  
+  .failure-bg {
+    background-size: 400px;
+  }
+  
+  .goosepimples-bg {
+    background-size: 200px;
+  }
+  
+  .labyrinth-bg {
+    background-size: 250vw;
+  }
+  
+  .voice-bg {
+    background-size: 400px;
+  }
+  
+  .sunshine-bg {
+    background-size: 400px;
+  }
+  
+  .night-bg {
+    background-size: 400px;
+  }
+  
+  .door-bg {
+    background-size: 330vw;
+  }
+  
+  .corridor-bg {
+    background-size: 330vw;
+  }
+  
+  .vulva-bg {
+    background-size: 330vw;
+  }
+  
+  .awake-bg {
+    background-size: 330vw;
+  }
+  
+  .fade-bg {
+    background-size: 330vw;
+  }
+  
+  .end-bg {
+    background-size: 180px;
+  }
+}
