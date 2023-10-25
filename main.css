@@ -19,6 +19,7 @@ body {
     margin:1.5rem;
     background:black;
     color:white;
+    /* font-family: "adobe-caslon-pro", serif; */
 }
 
 img {
@@ -94,5 +95,9 @@ h1 {
 }
 
 .forward-logo {
-  max-width: 100px;
+  max-width: 80px;
+}
+
+.sub {
+  font-size: 70%;
 }
