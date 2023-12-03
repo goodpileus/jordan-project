@@ -12,7 +12,8 @@
 }
 
 html {
-  font-size: 1.2rem;
+  font-size: .95rem;
+  font-family: "consolas", monospace;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     background:black;
     color:white;
     /* font-family: "adobe-caslon-pro", serif; */
+    /* font-size: .8rem; */
 }
 
 img {
@@ -28,6 +30,7 @@ img {
 
 p {
   margin-bottom:.5rem;
+  max-width:600px;
 }
 
 ul {
@@ -54,8 +57,9 @@ a:visited {
 }
 
 h1 {
-  font-size: 1.42rem;
+  font-size: 1.8rem;
   font-weight: normal;
+  font-family: serif;
 }
 
 .construction {
@@ -89,7 +93,7 @@ h1 {
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom:1.5rem;
   left:1.5rem;
 }
@@ -99,5 +103,5 @@ h1 {
 }
 
 .sub {
-  font-size: 70%;
+  font-size: 85%;
 }
